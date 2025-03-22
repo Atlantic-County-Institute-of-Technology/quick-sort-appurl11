@@ -10,7 +10,7 @@ public class Main {
         String[] sort = new String[50];
         Random rand = new Random();
         for (int i = 0; i < sort.length; i++) {
-            sort[i] == 
+            sort[i] == rand(50);
         }
     }
 }
