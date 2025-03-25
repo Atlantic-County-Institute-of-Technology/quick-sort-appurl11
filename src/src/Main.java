@@ -41,8 +41,8 @@ public class Main {
         if (low < high) {
         int pivot = sort[high];
         int i = low - 1;
-        // make the pivot point as the last index
 
+        // a loop that is used to partition left and right side of the array
         for (int j = low; j < high; j++) {
             if (sort[j] <= pivot) {
                 i++;
@@ -51,9 +51,8 @@ public class Main {
                 sort[j] = temp;
             }
         }
-        // goes through every item and if an item is less than the pivot point, it swaps
 
-
+        // after it's partitioned, swap out elements into the correct position
         int temp = sort[i + 1];
         sort[i + 1] = sort[high];
         sort[high] = temp;
