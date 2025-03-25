@@ -22,7 +22,7 @@ public class Main {
             System.out.println("Invalid");
             System.exit(choice);
         }
-        // Asks the user how long they want the sort to be, then does it
+        // Asks the user how long they want the sort to be, then makes the sort array the length they chose
 
         int[] sort = new int[length];
         Random rand = new Random();
