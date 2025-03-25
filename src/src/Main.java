@@ -31,10 +31,10 @@ public class Main {
         }
         // Creates an array of random numbers, unsorted
 
-        System.out.println("Array before the sort:" + Arrays.toString(sort));
+        System.out.println("Array before the sort: " + Arrays.toString(sort));
 
         quickSort(sort, 0, sort.length-1);
-        System.out.println("Array after the sort:" + Arrays.toString(sort));
+        System.out.println("Array after the sort: " + Arrays.toString(sort));
     }
 
     public static void quickSort(int [] sort, int low, int high) {
@@ -51,7 +51,8 @@ public class Main {
                 sort[j] = temp;
             }
         }
-        // goes through every item and if an item is less than the pivot point, it swaps 
+        // goes through every item and if an item is less than the pivot point, it swaps
+
 
         int temp = sort[i + 1];
         sort[i + 1] = sort[high];
